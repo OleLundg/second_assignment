@@ -2,9 +2,16 @@
 #include <stdlib.h>
 //Second assignment
 
+FILE *fp;
+void create_txt(char *fileName)
+{
+    fp = fopen(fileName, "w");
+}
+
 int main()
 {
-    FILE *fp = fopen("currency.txt", "w");
+
+
 
     return 0;
 }
