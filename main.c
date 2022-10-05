@@ -4,6 +4,7 @@
 
 int main()
 {
+    FILE *fp = fopen("currency.txt", "w");
 
     return 0;
 }
