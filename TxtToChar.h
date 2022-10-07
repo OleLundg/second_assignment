@@ -1,10 +1,10 @@
 char text[400];
 
-const char *TxtToChar(){
+const char *TxtToChar(char *fileName){
     FILE *ptr;
     char ch;
 
-    ptr = fopen("currency.txt", "r");
+    ptr = fopen(fileName, "r");
 
     if(ptr == NULL){
         printf("ERROR!");

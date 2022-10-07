@@ -12,7 +12,8 @@ struct Currency{
 
 int main()
 {
-    TxtToChar();
+    TxtToChar("test1.txt");
+
     struct Currency curr[20];
     char *ptr;
     int cu = 0;
@@ -27,16 +28,16 @@ int main()
         if(text[i]=='\t' || text[i]=='\n' || text[i]==' '){
             j = 0;
 
-            if(text[i+=1]!='\t' || text[i+=1]!='\n' || text[i+=1]!=' '){
 
-                if(cu%2==0){
+
+                if(c[0]!=NULL){
                     curr[n].country = c;
-                    printf("%s\n", curr->country);
+                    printf("%s : ", curr->country);
                     memset(c, 0, sizeof(c));
                     cu++;
                     i--;
                 }
-                else {
+                else if(v[0]!=NULL) {
                     curr[n].value = strtol(v, &ptr, 0);
                     printf("%ld\n", curr[n].value);
                     memset(v, 0, sizeof(v));
@@ -45,7 +46,7 @@ int main()
 
                 }
             }
-        }
+
         else if(text[i]!='\t' || text[i]!='\n' || text[i]!=' '){
             if(cu%2==0){
                 c[j]=text[i];
@@ -62,5 +63,11 @@ int main()
             printf("%ld", curr[n].value);
         }
     }
+//    i=0;
+//    while(i != 20){
+//        printf("%s ", curr[i].country);
+//        printf("%ld\n", curr[i].value);
+//        i++;
+//    }
     return 0;
 }
