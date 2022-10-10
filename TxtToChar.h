@@ -1,4 +1,4 @@
-char text[400];
+char text[10000];
 
 const char *TxtToChar(char *fileName){
     FILE *ptr;
