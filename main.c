@@ -34,7 +34,7 @@ int main()
                     printf("%s : ", curr->country);
                     memset(c, 0, sizeof(c)); //rensar variablen c från dess innehåll
                     cu++;   //counter för bokstäver eller siffror, jämna tal = bokstäver, ojämna = siffror.
-                    i--;
+
                 }
                 //om det finns något sparat i variabeln v sparas inehållet till den aktuella struct Currency.value
                 else if(v[0]!=NULL) {
@@ -63,6 +63,5 @@ int main()
             printf("%ld", curr[n].value);
         }
     }
-
     return 0;
 }
