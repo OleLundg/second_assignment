@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Header Files/create_txt.h"
-#include "Header Files/TxtToChar.h"
+#include "create_txt.h"
+#include "TxtToChar.h"
 //Second assignment
 
 struct Currency{
@@ -22,6 +22,7 @@ int main()
     int j = 0;
     char c[5];
     char v[12];
+
     //loopar igenom hela char-arrayen tills den är slut
     for(i = 0; text[i]!='\0'; i++){
 

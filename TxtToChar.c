@@ -1,14 +1,14 @@
-#include "Header Files/TxtToChar.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "TxtToChar.h"
 
-char text[10000];
+char textArr[10000];
 
 const char *TxtToChar(char *fileName){
     FILE *ptr;
     char ch;
 
-    ptr = fopen_s(fileName, "r");
+    ptr = fopen(fileName, "r");
 
     if(ptr == NULL){
         printf("ERROR!");
@@ -17,10 +17,10 @@ const char *TxtToChar(char *fileName){
 
     for(int i = 0; !feof(ptr); i++){
         ch = fgetc(ptr);
-        text[i] = ch;
+        textArr[i] = ch;
     }
 
     fclose(ptr);
 
-    return text;
+    return textArr;
 }
