@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "create_txt.h"
-#include "TxtToChar.h"
+#include "Header Files/create_txt.h"
+#include "Header Files/TxtToChar.h"
 //Second assignment
 
 struct Currency{
