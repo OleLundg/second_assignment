@@ -1,3 +1,7 @@
+# Clion
+*.idea/
+cmake-build-debug/
+
 # Code::Blocks
 *.depend
 *.layout
