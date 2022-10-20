@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include "TxtToChar.h"
 
-char textArr[10000];
+char *textArr[10000];
 
 const char *TxtToChar(char *fileName){
+
     FILE *ptr;
     char ch;
 
@@ -23,4 +24,9 @@ const char *TxtToChar(char *fileName){
     fclose(ptr);
 
     return textArr;
+}
+
+const char get_text(char **txt){
+    *txt = textArr;
+    printf("%s", *txt);
 }

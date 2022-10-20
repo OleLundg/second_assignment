@@ -14,6 +14,11 @@ int main()
 {
     TxtToChar("test1.txt"); //funktion som skriver om önskad .txt-fil till en char array
 
+    // Gets the text that was read from the file.
+    char *textBuf;
+    get_text(&textBuf);
+    printf(textBuf);
+
     struct Currency curr[20];
     char *ptr;
     int cu = 0;
@@ -24,10 +29,10 @@ int main()
     char v[12];
 
     //loopar igenom hela char-arrayen tills den är slut
-    for(i = 0; text[i]!='\0'; i++){
+    for(i = 0; textBuf[i]!='\0'; i++){
 
         //körs när aktuella tecknet i textfilen är mellanslag, tab eller radbyte.
-        if(text[i]=='\t' || text[i]=='\n' || text[i]==' '){
+        if(textBuf[i]=='\t' || textBuf[i]=='\n' || textBuf[i]==' '){
             j = 0;
                 //om det finns något sparat i variabeln c sparas innehållet till den aktuella struct Currency.country
                 if(c[0]!=NULL){
@@ -47,19 +52,19 @@ int main()
 
                 }
             }
-        else if(text[i]!='\t' || text[i]!='\n' || text[i]!=' '){
+        else if(textBuf[i]!='\t' || textBuf[i]!='\n' || textBuf[i]!=' '){
             //när text[i] innehåller en bokstav sparas den till c[j]
             if(cu%2==0){
-                c[j]=text[i];
+                c[j]=textBuf[i];
             }
             //när text[i] innehåller en siffra sparas den till v[j]
             else {
-                v[j]=text[i];
+                v[j]=textBuf[i];
             }
             j++;
         }
         //skriver ut det sista värdet av Currency.value
-        if (text[i+1] == '\0'){
+        if (textBuf[i+1] == '\0'){
             curr[n].value = strtol(v, &ptr, 0);
             printf("%ld", curr[n].value);
         }
