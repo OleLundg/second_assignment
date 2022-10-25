@@ -15,11 +15,6 @@ int main()
     char *textBuf;
     textBuf = TxtToChar("test1.txt"); //funktion som skriver om önskad .txt-fil till en char array
 
-    // Gets the text that was read from the file.
-
-    //get_text(&textBuf);
-    //printf(textBuf);
-
     struct Currency curr[20];
     char *ptr;
     int cu = 0;

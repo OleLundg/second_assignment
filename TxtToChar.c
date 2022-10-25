@@ -3,7 +3,6 @@
 #include "TxtToChar.h"
 
 
-
 const char *TxtToChar(char *fileName){
     static char textArr[10000];
     FILE *ptr;
@@ -25,9 +24,4 @@ const char *TxtToChar(char *fileName){
 
     return textArr;
 }
-
-//const char get_text(char **txt){
-//    *txt = textArr;
-//    printf("%s", *txt);
-//}
 
