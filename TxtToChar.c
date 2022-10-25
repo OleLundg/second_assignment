@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "TxtToChar.h"
 
-char *textArr[10000];
+
 
 const char *TxtToChar(char *fileName){
-
+    static char textArr[10000];
     FILE *ptr;
     char ch;
 
@@ -26,7 +26,8 @@ const char *TxtToChar(char *fileName){
     return textArr;
 }
 
-const char get_text(char **txt){
-    *txt = textArr;
-    printf("%s", *txt);
-}
+//const char get_text(char **txt){
+//    *txt = textArr;
+//    printf("%s", *txt);
+//}
+

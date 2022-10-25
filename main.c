@@ -12,12 +12,13 @@ struct Currency{
 
 int main()
 {
-    TxtToChar("test1.txt"); //funktion som skriver om önskad .txt-fil till en char array
+    char *textBuf;
+    textBuf = TxtToChar("test1.txt"); //funktion som skriver om önskad .txt-fil till en char array
 
     // Gets the text that was read from the file.
-    char *textBuf;
-    get_text(&textBuf);
-    printf(textBuf);
+
+    //get_text(&textBuf);
+    //printf(textBuf);
 
     struct Currency curr[20];
     char *ptr;
