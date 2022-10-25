@@ -1,0 +1,5 @@
+# ninja log v5
+1	94	6879695155250435	CMakeFiles/second_assignment.dir/TxtToChar.c.obj	3dd07e007c7a681a
+4	119	6884009650335463	CMakeFiles/second_assignment.dir/main.c.obj	29eaaa34da8fdce4
+7	65	6879557626768887	CMakeFiles/second_assignment.dir/create_txt.c.obj	60c1620270c51a81
+119	240	6884009651498289	second_assignment.exe	7e10725882c39d10

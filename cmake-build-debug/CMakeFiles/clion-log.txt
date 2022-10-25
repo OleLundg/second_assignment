@@ -1,0 +1,13 @@
+C:\Users\jessi\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4167.35\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/jessi/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/ninja/win/ninja.exe -G Ninja -S "C:\Skola\Programmering inbyggda system\second_assignment" -B "C:\Skola\Programmering inbyggda system\second_assignment\cmake-build-debug"
+-- Configuring done
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    create_txt.c
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: second_assignment
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
