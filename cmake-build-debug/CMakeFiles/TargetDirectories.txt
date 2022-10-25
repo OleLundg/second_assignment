@@ -1,2 +1,0 @@
-C:/Skola/Programmering inbyggda system/second_assignment/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Skola/Programmering inbyggda system/second_assignment/cmake-build-debug/CMakeFiles/rebuild_cache.dir
